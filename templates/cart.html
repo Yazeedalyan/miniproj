@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cart</title>
+</head>
+<body>
+<h1> Welcome to the </h2><span id="future-clicked"></span></h1>
+
+
+
+<img src = "{{url_for('static', filename=pic)}}"></body>
+<h1> fill Your information </h1>
+<div>
+<form method="POST" action="/userdata">
+
+            <label>Your name </label>
+            <div>
+                <input type="name"  name="name" id="name" required>
+            </div>
+        </div>
+        <div>
+            
+        </div>
+        <div>
+            <label>phone</label>
+            <div>
+                <input type="phone"  name="phone"  required minlength="9">
+            </div>
+        </div>
+
+        <!-- Password -->
+        <div>
+            <label>Your Place </label>
+            <div class="input-group">
+                <input type="place"  name="place" minlength="1">
+            </div>
+        </div>
+        <div>
+            <label>any thing</label>
+            <div class="input-group">
+                <input type="anything"  name="anything" maxlength="280">
+            </div>
+        </div>
+        <!-- Button -->
+        <div>
+            <input type="submit"/>
+        </div>
+    </form>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product</title>
+
+
+
+
+
+
+<style>
+    
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body {
+  margin:0;
+background:#000;
+
+}
+
+
+}
+
+
+}
+header{
+background:#000;
+}
+
+.container{
+width: 100%;
+margin: auto;
+background-color:#000   ;
+
+}
+.logo img{
+width:200px;
+height:68px;
+
+
+}
+ .nav-main{
+   float: right;
+   margin-top:10px;
+   
+
+
+ }
+ .nav-main li{
+list-style: none;
+display: inline-block;
+margin-right:20px;
+
+ }
+ .nav-main li:hover{
+background-color:grey   ;
+   border-radius: 12px;
+
+ }
+
+.nav-main li a{
+text-decoration: none;
+font-size: 20px;
+padding: 10px 10px;
+text-transform: uppercase;
+color: #ffc967;
+ }
+ .nav-main li a.active{
+
+border:1px solid #fff;
+
+ }
+
+
+
+
+/******/
+
+main {
+  padding-top: 100px;
+}
+
+
+
+/************/
+
+
+/************    ************/
+
+.product-card-container {
+  padding-top: 1rem;
+  display: flex;
+  gap: 0.8rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  transition: all 1.5s ease;
+}
+
+.product-card {
+  width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 7px 25px -10px rgba(0,0,0,0.33);
+  overflow: hidden;
+  position: relative;
+}
+
+.product-card, .product-card * {
+  transition: all 0.5s ease;
+  text-decoration: none;
+}
+
+.product-card:hover {
+  box-shadow: 0 10px 25px -5px rgba(0,0,0,0.25);  
+  transform: translateY(-3px);
+}
+
+.product-card .product-card-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: 10% 10% 10% 10%;
+}
+
+.product-card:hover .product-card-img {
+  height: 240px;
+}
+
+.product-card:hover .product-card-details {
+  padding-bottom: 75px;
+}
+
+.product-card .product-card-details{
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(rgba(0,0,0,0.025), transparent);
+}
+
+/*** Product Details: Produt Name & Product Price Styling [STARTS] ***/
+
+.product-card .product-card-details .product-name {
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+  color: #ffc967;
+}
+
+.product-card .product-card-details .product-price {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #ffc967;
+}
+
+/*** Product Details: Produt Name & Product Price Styling [ENDS] ***/
+
+
+/*** Product Details: Produt Wish & AddToCart [STARTS] ***/
+
+.product-card .product-wish-addtocart{
+  position: absolute;
+  bottom: -75px;
+  right: 0;
+  left: 0;
+}
+
+.product-card:hover .product-wish-addtocart{
+  bottom: 1.1rem;
+}
+
+.product-card .product-wish-addtocart {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-card .product-wish-addtocart .addtocart-btn {
+  border-radius: 32px 0 0 32px!important;
+  width: 162px;
+}
+
+.product-card .product-wish-addtocart .wish-btn {
+  margin-left: 1.2rem;
+  width: 2.2rem;
+  height: 2.2rem;
+  padding: 1.3rem 1.3rem;
+  background-color: #eee;
+  color: #ffc967;
+  box-shadow: none;
+  text-content: center;
+}
+
+.wish-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a.wish-btn, a.addtocart-btn {
+  background: #ffc967;
+  padding: 0.6rem 2.2rem;
+  font-family: 'Open Sans',sans-serif;
+  font-weight: 600!important;
+  font-size: 15px;
+  border-radius: 100px!important;
+  color: black;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.133);
+}
+
+.addtocart-btn:hover, .wish-btn:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+/*** Product Details: Produt Wish & AddToCart [ENDS] ***/
+
+
+/** Mobile Friendly [STARTS] ***/
+@media (max-width: 840px) {
+
+  .product-card-container {
+    justify-content: center;
+  }
+  
+  .product-card .product-card-img {
+    height: 240px;
+  }
+  
+  .product-card .product-card-details {
+    padding-bottom: 72px;
+  }
+  
+  .product-card .product-wish-addtocart{
+    bottom: 1.1rem;
+  }
+  
+  .carousel-inner img {
+    object-position: center;
+  }
+  
+}
+
+@media (max-width: 400px) {
+  .product-card {
+    width: 100%;
+  }
+}
+
+/*** Mobile Friendly [ENDS] ***/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+
+
+
+<div class ="container">
+   <div class ="logo">
+       <img src ="static/logo2222.png" >  
+       
+         <ul class ="nav-main">
+
+       
+
+          <li><a class ="active" href="/home">Home</a></li>
+          <li><a href="#about.html">Sports</a></li>
+          <li><a href="counter.html">Men</a></li>
+          <li><a href="login.html">Electronics</a></li>
+          <li><a href="login.html">Home World</a></li>
+          <li><a href="login.html">Women</a></li>
+          <li><a href="login.html">Beauty</a></li>
+          
+             </ul>
+
+        
+
+
+<main>
+  <div class="product-card-container-outer">
+    <div class="container">
+      <div class="product-card-container">
+
+      </div>
+    </div>
+  </div>
+</main>
+
+
+
+
+
+<script>
+  
+
+function create_product_card(product_name, product_price, product_image, product_link) {
+  
+  product_card_div = `
+  <div class="product-card">
+
+    <a href="${product_link}" class="product-link">
+      <img class="product-card-img" src='static/${product_image}'/>
+      <div class="product-card-details">
+        <span class="product-name">${product_name}</span>
+        <span class="product-price">${product_price}</span>
+      </div>
+    </a>
+
+    <div class="product-wish-addtocart">
+      <a class="wish-btn">
+        <img class="wish-btn-img" src="https://tech.mjassociate.co.in/images/svgs/like_red_outerline.svg" width="21" height="21"> </img>
+      </a>
+      <a href="/cart/${product_image}" class="addtocart-btn">Add To Cart</a>
+    </div>
+
+  </div> `;
+  
+  return product_card_div;
+  
+}
+
+const product_card_container = document.querySelector('.product-card-container');
+
+product_data_json = [
+  {
+    "product_name": "nike air force 1", 
+    "product_price": " 1 ₪",
+    "product_image": "airf1.webp",
+    
+  },
+  {
+    "product_name": "nike blazer", 
+    "product_price": "free ₪",
+    "product_image": "nike.webp"
+  },
+  {
+    "product_name": "nike air max", 
+    "product_price": "1 ₪",
+    "product_image": "nike2.webp"
+  },
+   {
+    "product_name": "adidas forum mid", 
+    "product_price": "1 ₪",
+    "product_image": "adidas2.webp"
+  },
+  {
+    "product_name": "adidas superstar ", 
+    "product_price": "1 ₪",
+    "product_image": "adidas3.webp"
+  },
+   {
+    "product_name": "under armour ", 
+    "product_price": "1 ₪",
+    "product_image": "3024903-101_DEFAULT.webp"
+  },
+   {
+    "product_name": "under urmour hovr ", 
+    "product_price": "0 ₪",
+    "product_image": "under2.webp"
+  },
+   {
+    "product_name": "adidas newbalanc 550 ", 
+    "product_price": "0 ₪",
+    "product_image": "newbalanc.webp"
+  },
+   {
+    "product_name": "newbalance 990 ", 
+    "product_price": "0 ₪",
+    "product_image": "newbalanc2.webp"
+  },
+   {
+    "product_name": "adidis ultraboost 22 ", 
+    "product_price": "0 ₪",
+    "product_image": "ultra.webp"
+  },
+  {
+    "product_name": "nike air force 1", 
+    "product_price": " 1 ₪",
+    "product_image": "airf1.webp",
+    
+  },
+  {
+    "product_name": "nike air force 1", 
+    "product_price": " 1 ₪",
+    "product_image": "nike13.webp",
+    
+  },
+  {
+    "product_name": "nike air force 1", 
+    "product_price": " 1 ₪",
+    "product_image": "nike14.jpeg",
+    
+  },
+  {
+    "product_name": "nike air force 1", 
+    "product_price": " 1 ₪",
+    "product_image": "shoes20.webp",
+    
+  },
+  {
+    "product_name": "nike air force 1", 
+    "product_price": " 1 ₪",
+    "product_image": "airf1.webp",
+    
+  },
+  {
+    "product_name": "nike air force 1", 
+    "product_price": " 1 ₪",
+    "product_image": "airf1.webp",
+    
+  },
+  {
+    "product_name": "nike air force 1", 
+    "product_price": " 1 ₪",
+    "product_image": "airf1.webp",
+    
+  },
+  {
+    "product_name": "nike air force 1", 
+    "product_price": " 1 ₪",
+    "product_image": "nike21.jpeg",
+    
+  },
+  {
+    "product_name": "nike air force 1", 
+    "product_price": " 1 ₪",
+    "product_image": "airf1.webp",
+    
+  },
+  {
+    "product_name": "nike air force 1", 
+    "product_price": " 1 ₪",
+    "product_image": "airf1.webp",
+    
+  },
+ 
+
+]
+
+function populate_products(product_data_json){
+  product_card_container.innerHTML = "";
+  for (one_product_data_json of product_data_json) {
+    product_card_container.innerHTML += create_product_card(one_product_data_json.product_name, one_product_data_json.product_price, one_product_data_json.product_image, one_product_data_json.product_link);
+  }
+}
+
+populate_products(product_data_json);
+
+addEvents();
+
+function addEvents() {
+  document.querySelectorAll(".wish-btn-img").forEach((one_wish_btn) => {
+    one_wish_btn.addEventListener('click', function(event) {
+      event.target.src = "https://tech.mjassociate.co.in/images/svgs/like_red_filled.svg";
+    });
+  });
+}
+
+
+
+
+
+
+
+
+</script>
+ 
+</html>

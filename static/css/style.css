@@ -1,0 +1,248 @@
+<style>
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body {
+  margin:0;
+background:white;
+
+}
+
+
+}
+
+
+}
+header{
+background:#000;
+}
+
+.container{
+width: 100%;
+margin: auto;
+background-color:#000   ;
+
+}
+.logo img{
+width:auto;
+height:auto;
+
+
+}
+ .nav-main{
+   float: right;
+   margin-top:10px;
+   
+
+
+ }
+ .nav-main li{
+list-style: none;
+display: inline-block;
+margin-right:20px;
+
+ }
+ .nav-main li:hover{
+background-color:grey   ;
+   border-radius: 12px;
+
+ }
+
+.nav-main li a{
+text-decoration: none;
+font-size: 20px;
+padding: 10px 10px;
+text-transform: uppercase;
+color: #FFFF00;
+ }
+ .nav-main li a.active{
+
+border:1px solid #fff;
+
+ }
+ 
+.titleheader{
+width: 100%;
+position: absolute;
+margin: 0;
+padding: 0;
+text-align: center;
+ }
+
+
+
+html, body, main{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#carousel{
+  position: relative;
+  height: 400px;
+  top: 30%;
+  transform: translateY(-50%);
+  overflow: hidden;
+}
+
+#carousel > div.slideImg{
+  position: absolute;
+  opacity: 0;
+}
+
+#carousel > div > img{
+  width: 400px;
+  transition: width 1s;
+}
+
+#carousel > div.hideLeft{
+  left: 0%;
+  opacity: 0;
+  transition: transform 1s, left 1s, opacity 1s;
+  transform: translateY(50%) translateX(-50%);
+}
+
+#carousel > div.hideLeft > img{
+  width: 200px;
+}
+
+#carousel > div.hideRight{
+  left: 100%;
+  transition: transform 1s, left 1s, opacity 1s;
+  opacity: 0;
+  transform: translateY(50%) translateX(-50%);
+}
+
+#carousel > div.hideRight > img{
+  width: 200px;
+}
+
+#carousel > div.prev{
+  z-index: 5;
+  left: 30%;
+  transform: translateY(50px) translateX(-50%);
+  opacity: 1;
+  transition: transform 1s, left 1s, opacity 1s;
+}
+
+#carousel > div.prev > img{
+  width: 300px;
+}
+
+#carousel > div.prevLeftSecond{
+  z-index: 4;
+  left: 15%;
+  transform: translateY(50%) translateX(-50%);
+  opacity: 0.7;
+  transition: transform 1s, left 1s, opacity 1s;
+}
+
+#carousel > div.prevLeftSecond > img{
+  width: 200px;
+}
+
+#carousel > div.selected{
+  z-index: 10;
+  left: 50%;
+  transition: transform 1s, left 1s, opacity 1s;
+  opacity: 1;
+  transform: translateY(0px) translateX(-50%);
+}
+
+#carousel > div.next{
+  z-index: 5;
+  left: 70%;
+  transition: transform 1s, left 1s, opacity 1s;
+  opacity: 1;
+  transform: translateY(50px) translateX(-50%);
+}
+
+#carousel > div.next > img{
+  width: 300px;
+}
+
+#carousel > div.nextRightSecond{
+  z-index: 4;
+  left: 85%;
+  transition: transform 1s, left 1s, opacity 1s;
+  transform: translateY(50%) translateX(-50%);
+  opacity: 0.7;
+}
+
+#carousel > div.nextRightSecond > img{
+  width: 200px;
+}
+
+
+div.positionBtn{
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10px;
+  margin-top: 140px;
+}
+
+#prev, #next{
+    background: #272727;
+    color: yellow ;
+    border: 0px;
+    font-weight: bold;
+    font-size: 22px;
+    margin: 0px;
+    opacity: 0.6;
+} 
+
+#prev > span, #next >span{
+    width: 100px;
+    padding: 15px;
+    display: block;
+}
+  
+#prev{
+  text-align: right;
+  border-radius: 100% 0px 0px 100%!important;
+}
+
+#next{
+  text-align: left;
+  border-radius: 0% 100px 100px 0%!important;
+
+}
+
+#prev:hover, #next:hover{
+  opacity: 1;
+}
+
+#prev:focus, #next:focus{
+  border: 0px;
+}
+
+
+
+.col{
+  padding : 5px  ;
+  padding-left: 40px;
+  margin-top: 50px;
+
+}
+.col img{
+border-radius: 2px 16px;
+padding: 23px;
+width: 400px;
+height: 300px;
+filter : greyscale(100%);
+transition :1s ;
+
+}
+
+
+
+  .col img:hover{
+  filter : greyscale(0);
+  transform: scale(1.1);
+  }

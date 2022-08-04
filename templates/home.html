@@ -1,0 +1,567 @@
+<html>
+
+
+
+
+<style>
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+#back{
+margin:0;
+background-color:#ffffff;
+
+}
+
+
+}
+
+
+}
+header{
+background:#000;
+}
+
+.container{
+width: 100%;
+margin: auto;
+height :70px;
+background-color:#000   ;
+}
+.logo img{
+width:200px;
+height:68px;
+
+
+}
+ .nav-main{
+   float: right;
+   margin-top:10px;
+   
+
+
+ }
+ .nav-main li{
+list-style: none;
+display: inline-block;
+margin-right:20px;
+
+ }
+ .nav-main li:hover{
+background-color:grey   ;
+   border-radius: 12px;
+
+ }
+
+.nav-main li a{
+text-decoration: none;
+font-size: 20px;
+padding: 10px 10px;
+text-transform: ;
+color: #ffc967;
+
+
+
+  
+ }
+ .nav-main li a.active{
+
+border:1px solid #fff;
+
+ }
+ 
+.titleheader{
+width: 100%;
+position: absolute;
+margin: 0;
+padding: 0;
+text-align: center;
+ }
+
+
+
+html, body, main{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#carousel{
+  top: 400%;
+  position: relative;
+  height: 400px;
+  transform: translateY(-50%);
+  overflow: hidden;
+}
+
+#carousel > div.slideImg{
+  position: absolute;
+  opacity: 0;
+}
+
+#carousel > div > img{
+  width: 400px;
+  transition: width 1s;
+}
+
+#carousel > div.hideLeft{
+  left: 0%;
+  opacity: 0;
+  transition: transform 1s, left 1s, opacity 1s;
+  transform: translateY(50%) translateX(-50%);
+}
+
+#carousel > div.hideLeft > img{
+  width: 200px;
+}
+
+#carousel > div.hideRight{
+  left: 100%;
+  transition: transform 1s, left 1s, opacity 1s;
+  opacity: 0;
+  transform: translateY(50%) translateX(-50%);
+}
+
+#carousel > div.hideRight > img{
+  width: 200px;
+}
+
+#carousel > div.prev{
+  z-index: 5;
+  left: 30%;
+  transform: translateY(50px) translateX(-50%);
+  opacity: 1;
+  transition: transform 1s, left 1s, opacity 1s;
+}
+
+#carousel > div.prev > img{
+  width: 300px;
+}
+
+#carousel > div.prevLeftSecond{
+  z-index: 4;
+  left: 15%;
+  transform: translateY(50%) translateX(-50%);
+  opacity: 0.7;
+  transition: transform 1s, left 1s, opacity 1s;
+}
+
+#carousel > div.prevLeftSecond > img{
+  width: 200px;
+}
+
+#carousel > div.selected{
+  z-index: 10;
+  left: 50%;
+  transition: transform 1s, left 1s, opacity 1s;
+  opacity: 1;
+  transform: translateY(0px) translateX(-50%);
+}
+
+#carousel > div.next{
+  z-index: 5;
+  left: 70%;
+  transition: transform 1s, left 1s, opacity 1s;
+  opacity: 1;
+  transform: translateY(50px) translateX(-50%);
+}
+
+#carousel > div.next > img{
+  width: 300px;
+}
+
+#carousel > div.nextRightSecond{
+  z-index: 4;
+  left: 85%;
+  transition: transform 1s, left 1s, opacity 1s;
+  transform: translateY(50%) translateX(-50%);
+  opacity: 0.7;
+}
+
+#carousel > div.nextRightSecond > img{
+  width: 200px;
+}
+
+
+div.positionBtn{
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10]px;
+  margin-top: 140px;
+}
+
+#prev, #next{
+    background: #272727;
+    color: #ffc967 ;
+    border: 0px;
+    font-weight: bold;
+    font-size: 22px;
+    margin: 0px;
+    opacity: 0.6;
+} 
+
+#prev > span, #next >span{
+    width: 100px;
+    padding: 15px;
+    display: block;
+}
+  
+#prev{
+  text-align: right;
+  border-radius: 100% 0px 0px 100%!important;
+}
+
+#next{
+  text-align: left;
+  border-radius: 0px 100% 100% 0px!important;
+
+}
+
+#prev:hover, #next:hover{
+  opacity: 1;
+}
+
+#prev:focus, #next:focus{
+  border: 0px;
+}
+
+
+
+.col{
+  padding : 5px  ;
+  padding-left: 40px;
+  margin-top: 10px;
+
+}
+.col img{
+border-radius: 2px 16px;
+padding: 23px;
+width: 800px;
+height: 700px;
+filter : greyscale(100%);
+transition :1s ;
+
+}
+
+
+
+  .col img:hover{
+  filter : greyscale(0);
+  }
+
+#btn1{
+  position: absolute;
+  top: 80%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color:#ffc967   ;
+
+}
+
+#btn2{
+  position: absolute;
+  top: 80%;
+  right: 25%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color:#ffc967   ;
+
+}
+#btn3{
+  position: absolute;
+  top: 155%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  cursor: pointer;
+  border-radius: 5px;
+background-color:#ffc967   ;
+
+}
+#btn4{
+  position: absolute;
+  top: 155%;
+  right: 25%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color:#ffc967   ;
+
+}
+
+
+
+#btn1:hover{
+background-color:grey   ;
+border-radius: 12px;
+}
+#btn2:hover{
+background-color:grey   ;
+border-radius: 12px;
+}
+#btn3:hover{
+background-color:grey   ;
+border-radius: 12px;
+}
+#btn4:hover{
+background-color:grey   ;
+border-radius: 12px;
+}
+
+
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+
+<div class ="container">
+   <div class ="logo">
+       <img src ="static/logo2222.png" >  
+       
+         <ul class ="nav-main">
+
+       
+
+          <li><a class ="active" href="index.html">Home</a></li>
+          <li><a href="#about.html">Sports</a></li>
+          <li><a href="counter.html">Men</a></li>
+          <li><a href="login.html">Electronics</a></li>
+          <li><a href="login.html">Home World</a></li>
+          <li><a href="login.html">Women</a></li>
+          <li><a href="login.html">Beauty</a></li>
+          <li><a href="/signin">login</a></li>
+
+
+
+          
+             </ul>
+
+        
+        
+       
+</div>     
+
+<div id = 'back'>
+<div class ="col">
+       <a href=""><img src ="static/first1.jpeg" width = "500px" height= "260px"></a>
+       <a href=""> <img src ="static/first2.jpeg"width = "500px" height= "260px"></a>
+       <a href=""> <img src ="static/first3.jpg"width = "500px" height= "260px"></a>
+       <a href="">  <img src ="static/FIRST4.png"width = "300px" height= "260px"></a>
+     
+    </div>
+
+
+
+<div id="slideshow-wrap">
+<main>
+<div id="carousel">
+                        <div class="slideImg hideLeft">
+                            <img src="static/ps5.jpg">
+                        </div>
+                        <div class="slideImg prevLeftSecond">
+                            <img src="static/iphone.jpg">
+                        </div>
+                        <div class="slideImg prev">
+                            <img src="static/ass.jpg" >
+                        </div>
+                        <div class="slideImg selected">
+                            <img src="static/sale2.png">
+                        </div>
+                        <div class="slideImg next">
+                            <img src="static/airf1.webp" >
+                        </div>
+                        <div class="slideImg nextRightSecond">
+                            <img src="static/ps52.jpg">
+                        </div>
+                        <div class="slideImg hideRight">
+                            <img src="static/jackets.jpeg">
+                        </div>
+                        <div class="slideImg hideRight">
+                            <img src="static/fridge.jpg">
+                        </div>
+                        <div class="slideImg hideRight">
+                            <img src="static/washer.webp">
+                        </div>
+                        <div class="slideImg hideRight">
+                            <img src="static/cooker.jpeg">
+                        </div>
+                        <div class="slideImg hideRight">
+                            <img src="static/clothes2.jpg">
+                        </div>
+                        <div class="slideImg hideRight">
+                            <img src="static/clothes3.jpeg">
+                        </div>
+                        </div>
+
+                <div class="positionBtn">
+                        <center>  
+                        <button id="prev"><span>PREV</span></button>
+                        <button id="next"><span>NEXT</span></button>
+                    </center>
+                    </div>
+                </main>    
+
+      <script>
+          
+
+const slide = {
+                    main : null,
+                    elementImg : null,
+                    imgSelected : 0,
+                    nextSlide: function (){
+                        if (this.imgSelected != null)
+                        {
+                            if (this.imgSelected < (this.elementImg.length - 1))
+                            {
+                                this.imgSelected++;
+                                this.normalizeSlide();
+                            }
+                        }
+                    },
+                    prevSlide: function (){
+                        if (this.imgSelected != null)
+                        {
+                            if (this.imgSelected > 0)
+                            {
+                                this.imgSelected--;
+                                this.normalizeSlide();
+                            }
+                        }
+                    },
+                    normalizeSlide: function (){
+
+                        for (num = 0; num < this.elementImg.length; num++)
+                        {
+                            this.elementImg[num].classList.remove("hideLeft","prevLeftSecond","prev","selected","next","nextRightSecond","hideRight");
+                        }
+
+                        this.elementImg[this.imgSelected].classList.add("selected");
+
+                        if (this.imgSelected > 2)
+                        {
+                            this.elementImg[this.imgSelected-2].classList.add("hideLeft");
+                            this.elementImg[this.imgSelected-2].classList.add("prevLeftSecond");
+                            this.elementImg[this.imgSelected-1].classList.add("prev");
+                        }
+                        else if (this.imgSelected > 1)
+                        {
+                            this.elementImg[this.imgSelected-2].classList.add("prevLeftSecond");
+                            this.elementImg[this.imgSelected-1].classList.add("prev");
+                        }
+                        else if (this.imgSelected > 0)
+                        {
+                            this.elementImg[this.imgSelected-1].classList.add("prev");
+                        }
+
+                        if ((this.imgSelected + 3) < this.elementImg.length)
+                        {
+                            this.elementImg[this.imgSelected+3].classList.add("hideRight");
+                            this.elementImg[this.imgSelected+2].classList.add("nextRightSecond");
+                            this.elementImg[this.imgSelected+1].classList.add("next");
+                        }
+                        else if ((this.imgSelected + 2) < this.elementImg.length)
+                        {
+                            this.elementImg[this.imgSelected+2].classList.add("nextRightSecond");
+                            this.elementImg[this.imgSelected+1].classList.add("next");
+                        }
+                        else if((this.imgSelected + 1) < this.elementImg.length)
+                        {
+                            this.elementImg[this.imgSelected+1].classList.add("next");
+                        }
+                    }
+                }
+
+                window.onload = () => {
+
+                    slide.main = document.getElementById("carousel");
+                    slide.elementImg = slide.main.getElementsByClassName("slideImg");
+
+                    for (num = 0; num < slide.elementImg.length; num++)
+                    {
+                        slide.elementImg[num].setAttribute("img-number", num);
+                        
+                        slide.elementImg[num].addEventListener("click", (event) => {
+                            slide.imgSelected = parseInt(event.target.parentElement.getAttribute("img-number"));
+                            slide.normalizeSlide();
+                        });
+
+                        if (slide.elementImg[num].classList.contains("selected"))
+                        {
+                            slide.imgSelected = num;
+                        }
+                    }
+
+                    document.getElementById("prev").addEventListener("click", () => {slide.prevSlide()});
+                    document.getElementById("next").addEventListener("click", () => {slide.nextSlide()});
+
+                }
+
+
+
+      </script>
+
+<div>
+
+
+<div class ='all-btn'>
+    <a href = ""><button id="btn1">Shop Now</button>
+    <a href = '/product'><button id="btn2">Shop Now</button>
+    <a href = ''><button id="btn3">Shop Now</button>
+    <a href = ''><button id="btn4">Shop Now</button>
+    </div> 
+
+
+</body>
+</html>
