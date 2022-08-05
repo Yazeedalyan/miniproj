@@ -1,10 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        <style>
+    
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body {
+  margin:0;
+background:#ffffff;
+
+}
+
+
+}
+
+
+}
+header{
+background:#ffffff;
+}
+
+.container{
+width: 100%;
+margin: auto;
+background-color:#ffffff   ;
+
+}
+.logo img{
+width:200px;
+height:68px;
+
+
+}
+ .nav-main{
+   float: right;
+   margin-top:10px;
+   
+
+
+ }
+ .nav-main li{
+list-style: none;
+display: inline-block;
+margin-right:20px;
+
+ }
+ .nav-main li:hover{
+background-color:grey   ;
+   border-radius: 12px;
+
+ }
+
+.nav-main li a{
+text-decoration: none;
+font-size: 20px;
+padding: 10px 10px;
+text-transform: uppercase;
+color: #ffc967;
+ }
+ .nav-main li a.active{
+
+border:1px solid #fff;
+
+ }
+
+
+    </style>
     <meta charset="UTF-8">
     <title>Cart</title>
 </head>
 <body>
+
+<div class ="container">
+   <div class ="logo">
+       <img src ="static/logo2222.png" >  
+       
+         <ul class ="nav-main">
+
+       
+
+          <li><a class ="active" href="/home">Home</a></li>
+          <li><a href="#about.html">Sports</a></li>
+          <li><a href="counter.html">Men</a></li>
+          <li><a href="login.html">Electronics</a></li>
+          <li><a href="login.html">Home World</a></li>
+          <li><a href="login.html">Women</a></li>
+          <li><a href="login.html">Beauty</a></li>
+          
+             </ul>
+         </div>
 <h1> Welcome to the </h2><span id="future-clicked"></span></h1>
 
 
@@ -25,7 +115,7 @@
         <div>
             <label>phone</label>
             <div>
-                <input type="phone"  name="phone"  required minlength="9">
+                <input type="phone"  name="phone"  required minlength="10">
             </div>
         </div>
 
@@ -33,7 +123,7 @@
         <div>
             <label>Your Place </label>
             <div class="input-group">
-                <input type="place"  name="place" minlength="1">
+                <input type="place"  name="place" minlength="6">
             </div>
         </div>
         <div>
